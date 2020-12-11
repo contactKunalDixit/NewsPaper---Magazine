@@ -1,0 +1,121 @@
+@import url("./reset.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 1200px;
+    margin: 10px auto;
+    font-size: 1.1rem;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.logo h1,
+h4 {
+    font-weight: bold;
+
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    border-top: 0.15rem;
+    border-bottom: 0.15rem;
+    border-color: grey;
+    border-top-style: solid;
+    border-bottom-style: solid;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    margin: 2rem 0;
+}
+
+.navigation a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: black;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.col {
+    margin: 1rem 0.5rem;
+    padding: 1rem;
+    flex: 1;
+
+}
+
+.col-1,
+.col-2 {
+    border-right: 0.15rem solid grey;
+}
+
+.row h3,
+p {
+    margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* .container {
+        min-width: 400px;
+
+    } */
+
+    .navigation {
+        flex-wrap: wrap;
+    }
+
+
+    main, header {
+        min-width: 500px;
+    }
+
+  
+    img {
+        margin:0.5rem auto;
+        object-fit: contain;
+        object-position:center;
+    }
+
+    figure{
+        width:90vw;
+        margin:0 auto;
+    }
+
+    .navigation a {
+        margin:0 0.7rem;
+    
+    }
+
+}
